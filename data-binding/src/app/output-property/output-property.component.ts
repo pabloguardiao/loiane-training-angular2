@@ -23,8 +23,8 @@ export class OutputPropertyComponent implements OnInit {
   }
 
   incrementa() {
-    console.log(this.campoValorInput.nativeElement.value)
     this.campoValorInput.nativeElement.value++;
+    console.log(this.campoValorInput.nativeElement.value)
     // this.valor++;
     // this.mudouValor.emit({novoValor: this.valor});
   }
