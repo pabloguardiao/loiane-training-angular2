@@ -1,0 +1,15 @@
+<nav>
+    <div class="nav-wrapper">
+        <a routerLink="" class="brand-logo right">NG</a>
+        <ul class="left hide-on-med-and-down">
+            <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+            <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['curso', inputId.value]">Curso com ID</a></li>
+        </ul>
+    </div>
+</nav>
+Entre com o id do curso:
+<input type="text" #inputId>
+
+
+<router-outlet></router-outlet>
